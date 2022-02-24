@@ -27,7 +27,7 @@ public class AppTest {
     void runTest1(){
 
         //Arrange
-        List<String> arguments= new ArrayList<>(List.of("INPUT_FILE=sample_input/input1.txt"));
+        List<String> arguments= new ArrayList<>(List.of("sample_input/input1.txt"));
 
 		String expectedOutput = "900"+" "+"1200";
         //Act
