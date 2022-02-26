@@ -13,6 +13,8 @@ public class AllotWaterCommand implements ICommand {
     private IBillGenerationService corpoBillGeneration;
     private double Bill;
     private Integer waterConsumed;
+
+    public AllotWaterCommand(){}
     
     public AllotWaterCommand(IBillGenerationService boreBillGeneration, IBillGenerationService corpoBillGeneration) {
         this.boreBillGeneration = boreBillGeneration;

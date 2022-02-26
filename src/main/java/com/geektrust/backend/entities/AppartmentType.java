@@ -5,11 +5,11 @@ import com.geektrust.backend.exceptions.InvalidAppartmentTypeException;
 public class AppartmentType extends BaseEntity{
     
     private double Bill = 0;
-    private Integer appartmentType;
-    private Integer corporation;
-    private Integer bore;
+    private Integer appartmentType = 0;
+    private Integer corporation = 0;
+    private Integer bore = 0;
     private static Integer noOfGuests = 0;
-    private Integer waterConsumed;
+    private Integer waterConsumed = 0;
 
     public AppartmentType(){}
 
@@ -51,7 +51,7 @@ public class AppartmentType extends BaseEntity{
     }
 
     public Integer findAll(){
-        return noOfGuests;
+        return AppartmentType.noOfGuests;
     }
 
     public double getBill(){

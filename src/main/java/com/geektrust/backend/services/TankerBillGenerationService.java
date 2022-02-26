@@ -3,15 +3,14 @@ package com.geektrust.backend.services;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-import com.geektrust.backend.commands.AddGuestCommand;
 import com.geektrust.backend.entities.AppartmentType;
 
 
 public class TankerBillGenerationService implements IBillGenerationService{
     
     public static AppartmentType aType;
-    private Integer waterConsumed;
-    private static Integer noOfGuests;
+    private Integer waterConsumed = 0;
+    private static Integer noOfGuests = 0;
     private Integer rWater = 0;
 
     public TankerBillGenerationService(AppartmentType aType){       
