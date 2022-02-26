@@ -8,7 +8,7 @@ public class AppartmentType {
     private Integer appartmentType;
     private Integer corporation;
     private Integer bore;
-    private Integer noOfGuests = 0;
+    private static Integer noOfGuests = 0;
     private Integer waterConsumed;
 
     public AppartmentType(){}
@@ -47,11 +47,11 @@ public class AppartmentType {
     }
 
     public void addToGuestList(Integer noOfGuests) {
-        this.noOfGuests+= noOfGuests;
+        AppartmentType.noOfGuests += noOfGuests;
     }
 
     public Integer findAll(){
-        return this.noOfGuests;
+        return noOfGuests;
     }
 
     public double getBill(){

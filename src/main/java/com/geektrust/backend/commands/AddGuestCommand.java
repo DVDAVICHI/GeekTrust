@@ -25,10 +25,10 @@ public class AddGuestCommand implements ICommand {
         aType.addToGuestList(noOfGuests);     
 
         TankerBillGenerationService tankerBillGeneration = new TankerBillGenerationService(aType);
-        this.Bill = tankerBillGeneration.generateBill();
-        this.waterConsumed = tankerBillGeneration.getTotalWaterConsumed();
+        // this.Bill = tankerBillGeneration.generateBill();
+        // this.waterConsumed = tankerBillGeneration.getTotalWaterConsumed();
 
-        BillCommand billCommand = new BillCommand(Bill, waterConsumed);
+        // BillCommand billCommand = new BillCommand(Bill, waterConsumed);
 
     }
 

@@ -19,7 +19,7 @@ public class App {
   // To run the application  ./gradlew run --args="INPUT_FILE=sample_input/input1.txt"
 	public static void main(String[] args) {
 
-    args = new String[]{"sample_input/input1.txt"};   
+    //args = new String[]{"INPUT_FILE=sample_input/input1.txt"};   
     
 		List<String> commandLineArgs = new LinkedList<>(Arrays.asList(args));
         // String expectedSequence = "INPUT_FILE";
@@ -27,7 +27,7 @@ public class App {
         //         .map(a -> a.split("=")[0])
         //         .collect(Collectors.joining("$")).trim();
 
-        //if(expectedSequence.equals(actualSequence)){
+        // if(expectedSequence.equals(actualSequence)){
             run(commandLineArgs);
         //}
 
