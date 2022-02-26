@@ -2,7 +2,7 @@ package com.geektrust.backend.entities;
 
 import com.geektrust.backend.exceptions.InvalidAppartmentTypeException;
 
-public class AppartmentType {
+public class AppartmentType extends BaseEntity{
     
     private double Bill = 0;
     private Integer appartmentType;
