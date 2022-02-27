@@ -12,7 +12,7 @@ public class AddGuestCommand implements ICommand {
     private Integer noOfGuests = 0;
     private double Bill = 0;
     private Integer waterConsumed = 0;
-    //private AppartmentType aType;
+    private AppartmentType aType;
     
     public AddGuestCommand(){}
     

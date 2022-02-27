@@ -28,12 +28,12 @@ public class AppartmentTypeTest {
        Assertions.assertEquals(10, aType.getTotalRatio());
     }
 
-   //  @Test
-   //  public void testTotalNoOfGuests(){
+  /*  @Test
+    public void testTotalNoOfGuests(){
          
-   //     aType = new AppartmentType();
-   //     aType.addToGuestList(10);
+       aType = new AppartmentType();
+       aType.addToGuestList(10);
 
-   //     Assertions.assertEquals(10, aType.findAll());
-   //  }
+       Assertions.assertEquals(10, aType.findAll());
+    }*/
 }
