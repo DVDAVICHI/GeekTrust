@@ -12,13 +12,10 @@ public class BoreBillGenerationServiceTest {
     @Mock BoreWellBillGenerationService service;
     @Mock AppartmentType aType;
 
-  @BeforeEach
-  void setUp() {
-    service = new BoreWellBillGenerationService(7, 10, 3);    
-  }
-
+ 
   @Test
   public void testGenerateBill() {
+    service = new BoreWellBillGenerationService(7, 10, 3);    
     assertEquals(945.0, service.generateBill());
   }
   
@@ -32,5 +29,11 @@ public class BoreBillGenerationServiceTest {
  
       //Assert
       assertEquals(945.0, service.generateBill());
+  }
+
+  @Test
+  public void testGenerateBill_2() {
+    service = new BoreWellBillGenerationService(4, 9, 5);    
+    assertEquals(1000.0, service.generateBill());
   }
 }

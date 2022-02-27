@@ -21,7 +21,7 @@ public class AppartmentType extends BaseEntity{
         this.bore = Integer.parseInt(corpToBore[1]);
     }
     
-    public Integer getNoOfPeople()
+    public Integer getNoOfPeople() throws InvalidAppartmentTypeException
     {
         switch(appartmentType){
             case 2 :

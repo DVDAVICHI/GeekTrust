@@ -12,7 +12,7 @@ public class AppartmentTypeTest {
 
     @Test
     @DisplayName("#1 AppartmentType should throw InvalidAppartmentTypeException if appartment type is given invalid type")
-    public void contest_ShouldThrowInvalidContestException_GivenInvalidQuestionList(){
+    public void ShouldThrowInvalidAppartmentTypeException_GivenInvalidAppartmentType(){
         //Arrange
         aType = new AppartmentType(4,"3:7");
  
@@ -28,12 +28,11 @@ public class AppartmentTypeTest {
        Assertions.assertEquals(10, aType.getTotalRatio());
     }
 
-  /*  @Test
-    public void testTotalNoOfGuests(){
+    @Test
+    public void testTotalNoOfPeople(){
          
-       aType = new AppartmentType();
-       aType.addToGuestList(10);
+       aType = new AppartmentType(2, "5:4");       
 
-       Assertions.assertEquals(10, aType.findAll());
-    }*/
+       Assertions.assertEquals(3, aType.getNoOfPeople());
+    }
 }

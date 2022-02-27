@@ -15,7 +15,7 @@ public class CommandInvoker {
       commandMap.put(commandName, command);
     }
   
-    public void executeCommand(String commandName, List<String> tokens){
+    public void executeCommand(String commandName, List<String> tokens) throws CommandNotFoundException{
       ICommand command = commandMap.get(commandName);
       AppartmentType aType = new AppartmentType();
       if(command == null){
