@@ -2,7 +2,7 @@ package com.geektrust.backend.services;
 
 import com.geektrust.backend.entities.AppartmentType;
 
-public class BoreWellBillGenerationService implements IBillGenerationService {
+public class BoreWellBillGenerationService extends IBillGenerationService {
 
     private final double FLAT_RATE = 1.5;
     private AppartmentType aType;    

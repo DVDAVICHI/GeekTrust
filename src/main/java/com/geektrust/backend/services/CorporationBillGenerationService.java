@@ -2,7 +2,7 @@ package com.geektrust.backend.services;
 
 import com.geektrust.backend.entities.AppartmentType;
 
-public class CorporationBillGenerationService implements IBillGenerationService{
+public class CorporationBillGenerationService extends IBillGenerationService{
 
     private final double FLAT_RATE = 1.0;
     private AppartmentType aType;

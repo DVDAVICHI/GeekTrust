@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 import com.geektrust.backend.entities.AppartmentType;
 
 
-public class TankerBillGenerationService implements IBillGenerationService{
+public class TankerBillGenerationService extends IBillGenerationService{
     
     public static AppartmentType aType;
     private Integer waterConsumed = 0;
