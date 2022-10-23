@@ -1,9 +1,8 @@
 package com.geektrust.backend.commands;
 
+import com.geektrust.backend.entities.AppartmentType;
 import java.util.List;
 
-import com.geektrust.backend.entities.AppartmentType;
-
 public interface ICommand {
-    public void execute(List<String> tokens, AppartmentType aType);
-  }
+  public void execute(List<String> tokens);
+}

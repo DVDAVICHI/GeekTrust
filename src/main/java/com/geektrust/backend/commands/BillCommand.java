@@ -1,35 +1,38 @@
 package com.geektrust.backend.commands;
 
-import java.util.List;
-
 import com.geektrust.backend.entities.AppartmentType;
+import com.geektrust.backend.entities.BillGeneration;
 import com.geektrust.backend.services.TankerBillGenerationService;
+import java.util.List;
 
 public class BillCommand implements ICommand {
 
-    private static double bill = 0;
-    private static Integer waterConsumed = 0;
+  private double bill = 0;
+  private Integer waterConsumed = 0;
 
-    public BillCommand() {
-    }
+  public BillCommand() {}
 
-    public BillCommand(double bill, Integer waterConsumed) {
-        BillCommand.bill += bill;
-        BillCommand.waterConsumed += waterConsumed;
-    }
+  //   public BillCommand(double bill, Integer waterConsumed) {
+  //     BillCommand.bill += bill;
+  //     BillCommand.waterConsumed += waterConsumed;
+  //   }
 
-    @Override
-    public void execute(List<String> tokens, AppartmentType aType) {
+  @Override
+  public void execute(List<String> tokens) {
+    BillGeneration.getBillGnrtnObj().setTankerBill();
 
-        TankerBillGenerationService tankerBillGeneration = new TankerBillGenerationService();
-        if (tankerBillGeneration.aType != null) {
+    // TankerBillGenerationService tankerBillGeneration = new TankerBillGenerationService();
+    // if (tankerBillGeneration.aType != null) {
+    //   bill += tankerBillGeneration.generateBill();
+    //   waterConsumed += tankerBillGeneration.getTotalWaterConsumed();
+    // }
+    bill =
+      BillGeneration.getBillGnrtnObj().getBoreWellBill() +
+      BillGeneration.getBillGnrtnObj().getCorporateBill() +
+      BillGeneration.getBillGnrtnObj().getTankerBill();
 
-            bill += tankerBillGeneration.generateBill();
-            waterConsumed += tankerBillGeneration.getTotalWaterConsumed();
-        }
+    waterConsumed = BillGeneration.getBillGnrtnObj().getTotalWater();
 
-        System.out.println(waterConsumed + " " + (int) Math.ceil(bill));
-
-    }
-
+    System.out.println(waterConsumed + " " + (int) Math.ceil(bill));
+  }
 }
