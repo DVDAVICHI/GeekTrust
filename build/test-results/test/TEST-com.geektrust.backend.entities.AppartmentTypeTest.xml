@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.geektrust.backend.entities.AppartmentTypeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-23T10:26:38" hostname="MSI" time="0.007">
+<testsuite name="com.geektrust.backend.entities.AppartmentTypeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-23T16:00:18" hostname="MSI" time="0.005">
   <properties/>
   <testcase name="testTotalRatio()" classname="com.geektrust.backend.entities.AppartmentTypeTest" time="0.001"/>
   <testcase name="ShouldThrowInvalidAppartmentTypeException_GivenInvalidAppartmentType()" classname="com.geektrust.backend.entities.AppartmentTypeTest" time="0.002"/>
-  <testcase name="testTotalNoOfPeople()" classname="com.geektrust.backend.entities.AppartmentTypeTest" time="0.001"/>
+  <testcase name="testTotalNoOfPeople()" classname="com.geektrust.backend.entities.AppartmentTypeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
